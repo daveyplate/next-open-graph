@@ -16,7 +16,7 @@ import { useRouter } from "next/router"
  * @param {string} [props.siteName] - The name of the site.
  * @returns {JSX.Element} The Head component with meta tags.
  */
-export default function OpenGraph({ title, description, image, images = [], ogType = "website", twitterCard = "summary", url, siteName = process.env.NEXT_PUBLIC_SITE_NAME }) {
+export function OpenGraph({ title, description, image, images = [], ogType = "website", twitterCard = "summary", url, siteName = process.env.NEXT_PUBLIC_SITE_NAME }) {
     const router = useRouter()
     image = image || process.env.NEXT_PUBLIC_BASE_URL + "/apple-touch-icon.png"
     title = title ? `${title} | ${process.env.NEXT_PUBLIC_SITE_NAME}` : process.env.NEXT_PUBLIC_SITE_NAME
