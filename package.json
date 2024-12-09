@@ -1,7 +1,7 @@
 {
   "name": "@daveyplate/next-open-graph",
   "homepage": "https://github.com/daveyplate/next-open-graph",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Provides a simple way to add Open Graph meta tags to your Next.js app.",
   "main": "dist/index",
   "types": "dist/index",
