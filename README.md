@@ -68,4 +68,3 @@ export default function MyPage() {
 - **Type:** `string`
 - **Default:** `process.env.NEXT_PUBLIC_SITE_NAME`
 - **Description:** The name of the site.
-```
