@@ -3,14 +3,11 @@
   "homepage": "https://github.com/daveyplate/next-open-graph",
   "version": "1.0.2",
   "description": "Provides a simple way to add Open Graph meta tags to your Next.js app.",
-  "module": "dist/index",
+  "main": "dist/index",
   "types": "dist/index",
-  "files": [
-    "src",
-    "dist"
-  ],
   "scripts": {
-    "build": "babel src --out-dir dist && npx tsc",
+    "build": "tsc",
+    "watch": "tsc --watch",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -22,18 +19,20 @@
     "tags",
     "seo"
   ],
-  "author": "LeakedDave",
+  "author": "daveycodez",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.25.7",
     "@babel/core": "^7.25.7",
     "@babel/preset-env": "^7.25.7",
     "@babel/preset-react": "^7.25.7",
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.1",
     "typescript": "^5.6.2"
   },
   "peerDependencies": {
+    "next": ">=14.0.0",
     "react": ">=18.0.0",
-    "react-dom": ">=18.0.0",
-    "next": ">=14.0.0"
+    "react-dom": ">=18.0.0"
   }
 }
